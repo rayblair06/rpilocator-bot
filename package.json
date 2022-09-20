@@ -1,0 +1,12 @@
+{
+  "name": "rpilocator",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "license": "MIT",
+  "scripts": {
+    "start": "ts-node index.ts"
+  },
+  "dependencies": {
+    "rss-parser": "^3.12.0"
+  }
+}
