@@ -7,6 +7,7 @@
     "start": "ts-node index.ts"
   },
   "dependencies": {
-    "rss-parser": "^3.12.0"
+    "rss-parser": "^3.12.0",
+    "ts-node": "^10.9.1"
   }
 }
