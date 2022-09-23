@@ -6,6 +6,7 @@ dotenv.config();
  * dotenv .env variables
  */
 export default {
+    SCHEDULER: process.env.SCHEDULER ?? '',
     MAIL_HOST: process.env.MAIL_HOST ?? '',
     MAIL_PORT: process.env.MAIL_PORT ?? '',
     MAIL_USER: process.env.MAIL_USER ?? '',
