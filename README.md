@@ -17,5 +17,7 @@ yarn start
 
 ## Commands
 ```
-yarn start                 # Start script
+yarn build                 # Builds script
+yarn start                 # Build and starts script
+yarn start:dev             # Runs script (via ts-node)
 ```

@@ -1,0 +1,18 @@
+<h1>Hey, {{ name }}</h1>
+
+{{#if this.[1]}}
+    <table>
+        {{#each this}}
+            <tr>
+                <td>
+                    <a href="{{ link }}">{{ title }}</a>
+                </td>
+                <td>
+                    {{ pubDate }}
+                </td>
+            </tr>
+        {{/each}}
+    </table>
+{{ else }}
+    <h2>Nothing today :(</h2>
+{{/if}}
