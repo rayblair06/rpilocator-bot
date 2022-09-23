@@ -10,6 +10,12 @@ const parser: Parser<CustomFeed, CustomItem> = new Parser({
   }
 });
 
+/**
+ * Parse our RSS Feed
+ * 
+ * @param feedUrl 
+ * @returns 
+ */
 export const parse = async (feedUrl: string) => {
     console.log('Attempting to parse : ' + feedUrl);
 

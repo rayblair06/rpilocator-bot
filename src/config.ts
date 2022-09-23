@@ -2,6 +2,9 @@ import * as dotenv from 'dotenv';
 
 dotenv.config();
 
+/**
+ * dotenv .env variables
+ */
 export default {
     MAIL_HOST: process.env.MAIL_HOST ?? '',
     MAIL_PORT: process.env.MAIL_PORT ?? '',

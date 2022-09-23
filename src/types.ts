@@ -1,3 +1,6 @@
+/**
+ * Email Client Parameters
+ */
 export interface EmailClient {
     host:string,
     port:number,
@@ -5,6 +8,9 @@ export interface EmailClient {
     pass:string,
 }
 
+/**
+ * Email Address Object
+ */
 export interface EmailAddressObject {
     toName:string,
     toAddress:string,

@@ -1,7 +1,6 @@
 import { ToadScheduler, SimpleIntervalJob, AsyncTask } from 'toad-scheduler';
 
 export const scheduler = async (action: any, interval: number) => {
-    // Scheduler test
     // https://github.com/kibertoad/toad-scheduler
     const scheduler = new ToadScheduler();
     

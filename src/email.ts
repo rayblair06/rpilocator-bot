@@ -4,6 +4,15 @@ import type { EmailClient, EmailAddressObject } from './types';
 import handlebars from 'handlebars';
 import nodemailer from 'nodemailer';
 
+/**
+ * 
+ * Send Email Notification
+ * 
+ * @param emailClient 
+ * @param emailAddress 
+ * @param template 
+ * @param data 
+ */
 export const sendEmail = async (emailClient : EmailClient, emailAddress: EmailAddressObject, template: string, data: object) => {
     console.log('Attempting to send notification...');
 
@@ -31,6 +40,14 @@ export const sendEmail = async (emailClient : EmailClient, emailAddress: EmailAd
     // Message sent: <b658f8ca-6296-ccf4-8306-87d57a0b4321@example.com>
 };
 
+/**
+ * 
+ * Render HTML Template
+ * 
+ * @param path 
+ * @param replacements 
+ * @returns 
+ */
 const renderTemplate = (path: string, replacements = {}) => {
     const source = fs.readFileSync(path, 'utf-8').toString();
     const template = handlebars.compile(source);

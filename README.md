@@ -8,6 +8,12 @@ This script just returns RSS feed from `rpilocator.com` in a JSON readable forma
 
 ## Installation
 
+Copy .env and fill in variables
+
+```
+cp .env.example .env
+```
+
 Install deps with Yarn then run the script.
 
 ```

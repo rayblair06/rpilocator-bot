@@ -5,9 +5,13 @@ import config from './config';
 
 const feedUrl: string = config.FEED_URL;
 
+/**
+ * Execute our operation async
+ */
 (async () => {
   console.log('Scheduler starting...');
 
+  // TODO: We actually might want to execute this using cronjob?
   scheduler(
     async () => {
         console.log('Task starting...');
